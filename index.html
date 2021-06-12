@@ -2,8 +2,18 @@
 <html>
 <head>
     <title>WebGL Example</title>
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <script type="text/javascript" src="js/fragment_shader.js"></script>
+    <script type="text/javascript" src="js/vertex_shader.js"></script>
+    <script type="text/javascript" src="js/webgl_utils.js"></script>
+    <script type="text/javascript" src="js/startup.js"></script>
 </head>
-<body>
+<body onload="startup();">
     <h1>WebGL Example</h1>
+    <div id="errorMessage"></div>
+    <canvas id="stage" width="640" height="480"></canvas>
 </body>
 </html>
